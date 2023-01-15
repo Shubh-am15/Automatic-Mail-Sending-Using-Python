@@ -10,11 +10,11 @@ import time
 
 root = Tk()
 
-win_icon = PhotoImage(file='D:\Codes\C Prog\Wizard\win_icon.png')
+win_icon = PhotoImage(file='win_icon.png')
 root.iconphoto(False, win_icon)
 
-send_btn = PhotoImage(file='D:\Codes\C Prog\Wizard\send_button.png')
-files_btn = PhotoImage(file='D:\Codes\C Prog\Wizard\\file.png')
+send_btn = PhotoImage(file='send_button.png')
+files_btn = PhotoImage(file='file.png')
 
 root.maxsize(800, 600)
 root.minsize(800, 600)
@@ -71,7 +71,7 @@ def send():
     time.sleep(10) # time selay for 60 seconds
     sbj = "Images you may like"
     msge = "Greetings Sir\n\nThis is an automated mail.\nYou bought some images from us, we do have some more images according to your interest which you can check out.\nHere are some of our top rated images you may like."
-    img_files = ['D:\Codes\C Prog\Wizard\\1.jpg', 'D:\Codes\C Prog\Wizard\\2.jpg']
+    img_files = ['1.jpg', '2.jpg']
 
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
         mg['Subject'] = sbj
